@@ -1,3 +1,8 @@
+Instalation
+----------------
+Just drop the file BodyClass.php in `/application/views/helpers/`
+
+
 Usage
 ----------------
 Just call `$this->bodyClass()` on view scripts
