@@ -1,0 +1,36 @@
+Instalation
+----------------
+Just drop the file BodyClass.php in `/application/views/helpers/`
+
+
+Usage
+----------------
+Just call `$this->bodyClass()` on view scripts
+
+Example
+----------------
+`
+<html>
+	<head>
+		<title>Some Title</title>
+	</head>
+	<body <?php echo $this->bodyClass()->addClass('my-first-class') ?> >
+	
+	</body>
+</html>
+`
+
+Would result in:
+
+`
+<html>
+	<head>
+		<title>Some Title</title>
+	</head>
+	<body class="my-first-class" >
+	
+	</body>
+</html>
+`
+
+This way you can add classes on any part of the application (Bootstrap, Plugins, Controllers, Models...).
